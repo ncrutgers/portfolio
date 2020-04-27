@@ -5,14 +5,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Portfolio | Nancy Cruz</title>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">            
-    </head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+            .fa {
+              padding: 20px;            
+              font-size: 30px;              
+              text-align: center;
+              text-decoration: none;
+              margin: 5px 2px;
+              display: inline;
+            }
+            
+            .fa:hover {
+                opacity: 0.7;
+            }            
+            
+            .fa-linkedin {
+              background: #000000;
+              color: white;
+            }
+            
+            </style>   
+          
+      </head>
     
-    <body>
+    <body style="background-image: url('assets/pexels-photo-235615.jpeg'); background-repeat: no-repeat; background-position: center; background-size:cover; background-attachment: fixed;">
 
         <!--Start of nav-->
-        
-        <nav class="navbar navbar-expand-lg navbar-light bg-light py-4 border">
-            <a class="navbar-brand" href="index.html">Nancy Cruz</a>
+                
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark py-4 border" style="background-image: url('assets/pexels-photo-235615.jpeg'); background-repeat: no-repeat; background-position: center; background-size:cover; background-attachment: fixed;">
+            <a class="navbar-brand" href="newindex.html">Nancy Cruz</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -20,13 +44,13 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
+                  <a class="nav-link" href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
@@ -34,33 +58,137 @@
 
         <!--End of nav-->
 
-        <div class="container bg-light my-5 p-5 border">
-          <div class="row px-4">
-            <div class="col-md-12 py-2 mb-4 bg-secondary text-white">
-              <!--Heading-->
-              <h1>About</h1>                       
+<div class="container-fluid px-0">        
+        <div style="width:100%; height:600px; text-align:center;">
+            <div class="row">
+                <div class="col-md-12 text-white" style="margin-top:250px;">                    
+                    <h1 style="font-size: 60px;">Front-end Developer</h1>
+                </div>
             </div>
-          </div> 
-          <div class="row px-2">
-            <div class="col-md-4 mb-4 ">
-              <!--Placeholder for bio image-->
-              <img src="https://place-hold.it/500x500" alt="image" class="img-thumbnail">
-            </div>
-            <!--Placeholder for bio text-->
-            <div class="col-md-8 ">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi ipsum faucibus vitae aliquet nec ullamcorper sit. Sed odio morbi quis commodo odio aenean sed. Pulvinar elementum integer enim neque. Est placerat in egestas erat. Sed risus ultricies tristique nulla aliquet enim. Potenti nullam ac tortor vitae purus faucibus ornare. Pellentesque massa placerat duis ultricies lacus sed turpis tincidunt. Varius sit amet mattis vulputate enim nulla aliquet porttitor. Enim ut sem viverra aliquet eget. Etiam erat velit scelerisque in. Ornare quam viverra orci sagittis eu volutpat odio facilisis mauris. Purus non enim praesent elementum facilisis leo vel fringilla est. Lacus luctus accumsan tortor posuere ac ut consequat. Eu turpis egestas pretium aenean. Sed velit dignissim sodales ut eu sem integer vitae. Molestie ac feugiat sed lectus vestibulum mattis. Id venenatis a condimentum vitae sapien pellentesque. Nunc faucibus a pellentesque sit amet. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Et malesuada fames ac turpis egestas maecenas pharetra convallis. Hendrerit dolor magna eget est lorem ipsum. Dictum at tempor commodo ullamcorper a lacus vestibulum sed.
-              </p>
-            </div>        
-          </div>
         </div>
 
+        <!--About-->
+        <div class="bg-light my-5 p-5 border" id="about">
+            <div class="row">
+                <div class="col-md-12 pb-2">
+                <!--Heading-->
+                <h2>About</h2>                       
+                </div>
+            </div> 
+            <p>                
+                Aspiring creative front-end developer with training in core skills of web development - HTML, CSS, and JS.            
+            </p>
+        </div>
+        <!--End of About-->
+
+        <!--Portfolio-->
+        <div class="bg-light my-5 p-5 border" id="portfolio">                  
+            <div class="row mb-2">
+              <div class="col-md-12 pb-2 text-center">
+                <!--Heading-->
+                <h2>Portfolio</h2>                       
+              </div>
+            </div> 
+  
+            <!--Start of portfolio card grid-->
+  
+  
+            <div class="row row-cols-1 row-cols-md-2 px-2">
+              <div class="col mb-4">
+                <div class="card h-100">
+                  <a href="https://victoriaarda.github.io/Craft-Beverage-Locator"><img src="assets/craft-locator.png" class="card-img-top" alt="project image 1"></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Craft Beverage Locator</h5>
+                    <p class="card-text">A map that allows a purchaser of craft beverages to search for new craft beverages in their area. The map will return the location, retailer name and address for craft beverages that are distributed by the distributor Liquid Runner.</p>
+                    <small><a href="https://github.com/VictoriaArda/Craft-Beverage-Locator">GitHub Repository</a></small>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-4">
+                <div class="card h-100">
+                  <a href="https://ncrutgers.github.io/dayscheduler"><img src="assets/scheduler.png" class="card-img-top" alt="project image 2"></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Day Scheduler</h5>
+                    <p class="card-text">A calendar application that allows the user to save events for each hour of the day.</p>
+                    <small><a href="https://github.com/ncrutgers/dayscheduler">GitHub Repository</a></small>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-4">
+                <div class="card h-100">
+                  <a href="https://ncrutgers.github.io/weatherdashboard"><img src="assets/weather-dashboard.png" class="card-img-top" alt="project image 3"></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Weather Dashboard</h5>
+                    <p class="card-text">Weather dashboard build that will run in the browser and feature dynamically updated HTML and CSS.</p>
+                    <small><a href="https://github.com/ncrutgers/weatherdashboard">GitHub Repository</a></small>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-4">
+                <div class="card h-100">
+                  <a href="https://ncrutgers.github.io/horiseon.github.io"><img src="assets/digital-marketing-meeting.jpg" class="card-img-top" alt="project image 4"></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Code Refactor</h5>
+                    <p class="card-text">refactoring an existing webpage where changes where made to meet standard requirements of a marketing agency.</p>
+                    <small><a href="https://github.com/ncrutgers/horiseon.github.io">GitHub Repository</a></small>                    
+                  </div>
+                </div>
+              </div>            
+            </div>
+        </div>    
+        <!--End of portfolio card grid-->
+
+
+            <!--Contact-->
+            <div class="bg-light my-5 p-5 border" id="contact">
+                <div class="row">
+                  <div class="col-md-12 pb-2">
+                    <!--Heading-->
+                    <h2>Contact</h2>                       
+                  </div>
+                </div>
+      
+                <!--Contact info-->
+                <div class="card mb-3" >
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <img src="./assets/cellphone.jpg" class="card-img" alt="phone">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title py-2">Nancy Cruz</h5>
+                        <p class="card-text">E-mail: <a href="mailto:ncrutgers@gmail.com">ncrutgers@gmail.com</a></p>
+                        <p class="card-text">Tel: <a href="tel:201-281-4904">(201) 281-4904</a></p>
+                        <p class="card-text">GitHub: <a href="https://github.com/ncrutgers">GitHub Profile</a></p>
+                        <p class="card-text">Credentials: <a href="#">Link</a></p>                  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!--End of Contact-->
+            
+
+  
+ </div>      
+ 
+               
         <!--Footer-->
 
-        <footer class="footer py-4 bg-light text-center border">
+        <footer class="footer border text-white" style="background-color:#00000070;">
           
           <div class="container">
-            <p>Copyright</p>
+            <div class="row">
+                <div class="col-12 text-right my-4">
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="https://github.com/ncrutgers"><i class="fa fa-github" style="font-size:36px"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center pb-2">
+                    <small>&copy; Copyright 2020</small>
+                </div>
+            </div>
           </div>
         </footer>
         
@@ -68,6 +196,6 @@
 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-   
+  
     </body>
 </html>
